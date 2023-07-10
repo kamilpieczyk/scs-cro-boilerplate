@@ -1,0 +1,27 @@
+$buttonColor: #403E3E;
+$buttonHoverColor: #000000;
+$buttonLightColor: #FFFFFF;
+$buttonLightHoverColor: #F4F4F4;
+$shaddow: #bdbdbd;
+
+$breakpoints: (
+  mobile: 390,
+  tablet: 780,
+  desktop: 1024,
+  desktopXL: 1400
+);
+
+@mixin display($displayOption) {
+  display: $displayOption;
+}
+
+@mixin shadow {
+  box-shadow: 0px 6px 10px $shaddow;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
